@@ -5,7 +5,7 @@ metadata:
   labels:
     app: odoo
     env: prod
-  namespace: ic-webapp
+  namespace: icgroup
 spec:
   storageClassName: manual
   accessModes:

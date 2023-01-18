@@ -5,7 +5,7 @@ metadata:
     env: prod
     app: ic-webapp
   name: ic-webapp
-  namespace: ic-webapp
+  namespace: icgroup
 spec:
   replicas: 1
   selector:
@@ -18,13 +18,13 @@ spec:
         app: ic-webapp
     spec:
       containers:
-      - image: choco1992/ic-webapp:v1.0
+      - image: zomloa/ic-webapp:v1.0
         name: ic-webapp
         env:
         - name: ODOO_URL
-          value: http://172.28.128.32:30069/
+          value: http://192.168.56.4:30069/
         - name: PGADMIN_URL
-          value: http://172.28.128.32:30050/
+          value: http://192.168.56.4:30050/
         ports:
         - containerPort: 8080
           name: ic-webapp

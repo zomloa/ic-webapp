@@ -5,7 +5,7 @@ metadata:
     app: postgres
     env: prod
   name: postgres
-  namespace: ic-webapp
+  namespace: icgroup
 spec:
   ports:
   - port: 5432

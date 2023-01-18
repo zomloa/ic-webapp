@@ -5,7 +5,7 @@ metadata:
   labels:
     type: local
     env: prod
-  namespace: ic-webapp
+  namespace: icgroup
 spec:
   storageClassName: manual
   capacity:

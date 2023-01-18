@@ -5,7 +5,7 @@ metadata:
   labels:
     app: postgres
     env: prod
-  namespace: ic-webapp
+  namespace: icgroup
 spec:
   replicas: 1
   selector:
@@ -23,7 +23,7 @@ spec:
         - name: POSTGRES_DB
           value: postgres
         - name: POSTGRES_USER
-          value: toto
+          value: dave
         - name: POSTGRES_PASSWORD
           valueFrom:
             secretKeyRef:

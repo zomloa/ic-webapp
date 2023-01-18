@@ -5,7 +5,7 @@ metadata:
   labels:
     app: pg-admin
     env: prod
-  namespace: ic-webapp
+  namespace: icgroup
 spec:
   replicas: 1
   selector:

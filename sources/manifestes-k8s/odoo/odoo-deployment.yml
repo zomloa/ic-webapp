@@ -5,7 +5,7 @@ metadata:
   labels:
     app: odoo
     env: prod
-  namespace: ic-webapp
+  namespace: icgroup
 spec:
   replicas: 1
   selector:
@@ -21,7 +21,7 @@ spec:
         name: odoo
         env:
         - name: USER
-          value: toto
+          value: dave
         - name: HOST
           value: postgres
         - name: PASSWORD

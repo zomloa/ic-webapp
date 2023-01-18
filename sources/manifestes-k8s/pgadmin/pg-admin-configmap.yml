@@ -17,7 +17,7 @@ data:
 kind: ConfigMap
 metadata:
   name: pgadmin-config
-  namespace: ic-webapp
+  namespace: icgroup
   labels:
     env: prod
     
